@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   font-family: 'Poppins', sans-serif;
+   font-size: 1em;
+}
+
+/*layout*/
+.container {
+   margin: 0 auto;
+
+}
+
+.flex {
+   display: flex;
+   justify-content: space-between;
+   background-color: rgba(137, 43, 226, 0.486);
+   /*trocar a cor original do outro*/
+}
+
+.flex2 {
+   display: flex;
+   align-items: center;
+}
+
+/*alinhamnto video e texto*/
+.flex3 {
+   display: flex;
+   flex-direction: column;
+}
+
+.flex4 {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+}
+
+.flex5 {
+   display: flex;
+   flex-direction: column-reverse;
+   /* inventeu as posicoes */
+}
+
+.flex6 {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+
+.botao {
+   text-decoration: none;
+   color: black;
+   font-size: 1.3em;
+   font-weight: 700;
+   background-color: rgb(208, 0, 255);
+   padding: 10px 40px;
+   border: 2px solid black;
+   border-radius: 25px;
+}
+
+/*tenho que ver onde esta esse id*/
+#topo {
+   position: fixed;
+   right: 10px;
+   bottom: 10px;
+
+}
+
+/* cards*/
+.card {
+   margin-top: 25px;
+   width: 338px;
+   height: 520px;
+   background-color: rgba(137, 43, 226, 0.448);
+   border: 1px solid #a1a1a1;
+   border-radius: 25px;
+   text-align: center;
+}
+
+.card img {
+   width: 338px;
+   height: 300px;
+   border-radius: 25px 25px 0px 0px;
+}
+
+.card h3 {
+   margin-top: 15px;
+}
+
+.card p {
+   text-align: left;
+   color: #000;
+   padding: 10px;
+}
+
+.card a {
+   border: none;
+}
+
+
+/* phone portrait.....................*/
+
+header {
+   height: 60px;
+}
+
+.logo video {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+}
+
+#check {
+   display: none;
+}
+
+label {
+   font-size: 3em;
+   position: fixed;
+   top: 5px;
+   right: 15px;
+}
+
+nav ul {
+   list-style: none;
+   background-color: #34353881;
+   height: 100vh;
+   position: fixed;
+   top: 70px;
+   right: -65%;
+   /*esconde a lista*/
+   width: 50%;
+   transition: all 0.5s;
+
+}
+
+#check:checked~ul {
+   right: 0;
+}
+
+nav ul li {
+   padding: 20px;
+   border-bottom: 1px solid #a9a9a9;
+   text-align: right;
+
+}
+
+nav ul li a {
+   text-decoration: none;
+   color: #fff;
+}
+
+/*destaque*/
+main {
+   height: 75vh;
+   background: url(img/relaxante.webp);
+   background-size: cover;
+   background-position: center;
+   color: white;
+   /* centralizar o conteudo */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+
+}
+
+main h1 {
+   font-size: 2.5em;
+}
+
+main h2 {
+   font-size: 1em;
+   margin: 20px 0px 50px 0px;
+}
+/* sobre*/
+#sobre {
+   padding: 50px 0px;
+   background-color:rgba(255, 192, 250, 0.653);
+   /*trocar essa foto*/
+   background-size: cover;
+   background-position: center;
+   /*imagem no centro*/
+}
+
+#destaquesobre {
+   display: none;
+}
+
+#textoSobre {
+   color: black;
+   padding: 0px 10px;
+   font-size: larger;
+   font-weight: 700;
+}
+
+#textoSobre h2 {
+   margin-bottom: 10px;
+}
+
+.topicosobre {
+   margin-top: 20px;
+}
+
+.topicosobre img {
+   margin-right: 10px;
+}
+.topicosobre img{
+   width: 300px;
+   height: 300px;
+}
+/*video*/
+#onepage {
+   padding: 50px 10px;
+  
+}
+
+#onepage h2 {
+   margin-bottom: 10px;
+}
+
+#onepage p {
+   margin-bottom: 25px;
+}
+
+/*tamanho do video certinho*/
+#video video {
+   width: 400px;
+   height:250px;
+   border: 0;
+}
+
+.imageSer img{
+   width: 300px;
+   height: 300px;
+}
+
+
+/*qrcode*/
+#wireframe {
+   padding: 50px 0px;
+   background: url(img/logo01.png);
+   background-size: cover;
+   background-position: center;
+}
+
+#textoWire {
+   color: black;
+   padding: 0px 10px;
+
+}
+
+#textoWire h3 {
+   margin-bottom: 10px;
+
+}
+
+#textoWire p {
+   margin-bottom: 40px;
+}
+
+#qrcode {
+   display: none;
+}
+
+.contatoFrame img {
+   width: 50px;
+   height: 50px;
+   padding-top: 35px;
+   
+  
+}
+
+.contatoFrame a {
+   text-decoration: none;
+   color: black;
+}
+
+#conteudo {
+   padding: 50px 0px;
+}
+
+#conteudo h3 {
+   margin-bottom: 25px;
+   text-align: center;
+}
+
+/*rodape*/
+address {
+   padding: 35px 10px 50px 10px;
+   background: url(img/logo01.png);
+   background-size: cover;
+   background-position: center;
+   color:black;
+}
+
+address img {
+   width: 50px;
+   height: 50px;
+   padding-top: 15px;
+}
+
+address a {
+   text-decoration: none;
+   color: black;
+}
+
+#iconeLocal {
+   display: none;
+}
+
+#google {
+   display: none;
+}
+
+footer {
+   padding: 50px;
+   background-color: blueviolet;
+   color: #fff;
+   text-align: center;
+}
+
+footer img {
+   width: 50px;
+   height: 50px;
+}
+
+#social {
+   margin-bottom: 25px;
+}
+
+/* phone landscape..................*/
+@media (min-width:567px) {
+
+
+   .container {
+      max-width: 540px;
+   }
+
+   /*destaque sobreamneto no texto*/
+   main h1,
+   main h2 {
+      text-shadow: #000 0.05em 0.05em 0.05em;
+   }
+
+   /*tamanho do video certinho*/
+   #video iframe {
+      width: 560px;
+      height: 315px;
+   }
+
+   /*rodape mudando*/
+   .flex5 {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   #social {
+      margin: 0;
+   }
+
+
+}
+
+/* tablet portrait............................*/
+@media (min-width:768px) {
+
+
+   .container {
+      max-width: 720px;
+   }
+
+   /*destaque*/
+   main {
+      height: 45vh;
+   }
+
+   main h1 {
+      font-size: 5.5em;
+   }
+
+   main h2 {
+      font-size: 2em;
+   }
+}
+
+/* tablet landscape.............*/
+
+@media (min-width:992px) {
+
+   .container {
+      max-width: 960px;
+   }
+
+   /*destaque*/
+   main {
+      height: 70vh;
+
+   }
+
+}
+
+/* pc................................*/
+@media (min-width:1200px) {
+
+   .container {
+      max-width: 1140px;
+   }
+
+   header {
+      height: 120px;
+
+   }
+
+   .logo video {
+      border-radius: 60px;
+      width: 200px;
+      height: 200px;
+      margin-top: 30px;
+      /*colocou a imagem no centro*/
+   }
+
+
+   label {
+      display: none;
+
+   }
+
+   nav ul {
+      position: static;
+      width: 100%;
+      height: auto;
+      background-color: transparent;
+      margin-top: 50px;
+   }
+
+   nav ul li {
+      float: left;
+      border: 0;
+
+   }
+
+   nav ul li a {
+      color: #343538;
+   }
+
+   nav ul li a:hover {
+      color: black;
+   }
+
+   /*sobre*/
+
+   #sobre {
+      background-attachment: fixed;
+      /*efeito parallax*/
+   }
+
+   #destaquesobre {
+      display: inline;
+      /*mostra a imagem da logo*/
+   }
+
+   #destaquesobre img {
+      border-radius: 50%;
+      margin-right: 50px;
+   }
+   .topicosobre img{
+      width: 300px;
+      height: 300px;
+   }
+
+   /*alinhamnto video e texto*/
+   #onepage.flex3 {
+      flex-direction: row;
+      align-items: center;
+   }
+
+   #wireframe {
+      background-attachment: fixed;
+   }
+
+   .contatoFrame {
+      display: none;
+   }
+
+   #qrcode {
+      display: inline;
+   }
+
+   #qrcode img {
+      width: 225px;
+      height: 225px;
+   }
+
+   #iconeLocal {
+      display: inline;
+   }
+
+   #iconeMapa {
+      display: none;
+   }
+
+   #google {
+      display: inline;
+   }
+
+   .flex6 {
+      flex-direction: row-reverse;
+   }
+
+}
